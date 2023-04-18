@@ -10,7 +10,7 @@ usuario.send_keys("adminecom178k")
 usuario.send_keys(Keys.TAB)
 
 clave = driver.find_element("name", "_password")
-clave.send_keys("equiposie2022")
+clave.send_keys("cualseralacontraseñaeh")
 clave.send_keys(Keys.ENTER)
 time.sleep(3)
 

@@ -25,7 +25,7 @@ class usando_unittest(unittest.TestCase):
         elemento.send_keys(Keys.TAB)
         elemento = driver.find_element("name", "_password")
         time.sleep(3)
-        elemento.send_keys("equiposie2022")
+        elemento.send_keys("cualseralacontraseñaeh")
         time.sleep(3)
         elemento.send_keys(Keys.TAB)
         time.sleep(1)
