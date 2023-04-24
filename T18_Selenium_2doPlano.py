@@ -2,12 +2,18 @@ import unittest
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.options import Options #incorporar esto tambien
 from selenium.webdriver.common.keys import Keys
 
 class usando_unittest(unittest.TestCase):
 
+
     def setUp(self):
-        self.driver = webdriver.Chrome(executable_path=r"D:\dchrome\chromedriver.exe")
+# las proximas 3 lineas hacen ejecutar en segundo plano selenium
+        chrome_options = Options()
+        chrome_options.add_arguments("--headless")
+
+        self.driver = webdriver.Chrome(chrome_options = chrome_options , executable_path=r"D:\dchrome\chromedriver.exe")
     
     def test_urm(self):
         driver = self.driver
@@ -23,8 +29,7 @@ class usando_unittest(unittest.TestCase):
         #buscar_por_xpath.send_keys(Keys.TAB)
         URM_V1 = driver.find_element(By.XPATH, "//*[@id='password']")
         time.sleep(2)
-        URM_V1.send_keys("***") #poner pw.
-        
+        URM_V1.send_keys("***")
         time.sleep(2)
         #buscar_por_xpath.send_keys(Keys.TAB)
         time.sleep(2) 

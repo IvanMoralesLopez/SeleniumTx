@@ -11,3 +11,5 @@ encontrar_link = driver.find_element(By.LINK_TEXT, "Learn HTML") #El nombre tien
 encontrar_link.click()
 time.sleep(3)
 
+
+
