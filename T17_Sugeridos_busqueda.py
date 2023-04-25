@@ -14,7 +14,7 @@ time.sleep(3)
 
 for i in range(1,11):
     elementos = driver.find_element(By.XPATH, "//*[@id='jZ2SBf']/div[1]/div[3]/form/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div/ul/li["+str(i)+"]/div[1]/div[2]/div[1]/div[1]/span/b").text
-     #"+str(i)+" sirve para convertir a cadena para que el 1 sea leido por la automatizacion  y poner .text al final para recuperar el testo que encuentre en esa posicion
+#"+str(i)+" sirve para convertir a cadena para que el 1 sea leido por la automatizacion  y poner .text al final para recuperar el testo que encuentre en esa posicion
     print(palabra_busqueda + elementos) 
 driver.close()
     
