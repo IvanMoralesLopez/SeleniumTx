@@ -22,7 +22,7 @@ class usando_unittest(unittest.TestCase):
         #buscar_por_xpath.send_keys(Keys.TAB)
         URM_V1 = driver.find_element(By.XPATH, "//*[@id='password']")
         time.sleep(2)
-        URM_V1.send_keys("****") #poner pw.
+        URM_V1.send_keys("sie2023") #poner pw.
         
         time.sleep(2)
         #buscar_por_xpath.send_keys(Keys.TAB)
